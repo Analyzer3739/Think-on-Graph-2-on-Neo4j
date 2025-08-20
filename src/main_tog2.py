@@ -6,7 +6,9 @@ import torch
 from database_func import *
 from dotenv import load_dotenv
 
-load_dotenv()
+env_path = Path(__file__).resolve().parent.parent / 'config' / '.env'
+load_dotenv(dotenv_path=env_path)
+
 class Args:
     def __init__(self):
         self.dataset = "custom"
