@@ -9,7 +9,8 @@
    conda install pytorch==2.4.0 -c pytorch -c nvidia
    pip install -r requirements.txt
 
-5、安装Neo4j Desktop，创建并运行一个实例，构建知识图谱
+5、安装Neo4j Desktop，创建并运行一个实例，构建知识图谱,对需要搜索的entity建立向量索引，将索引名称填入neo4j_client.py中的get_entities_from_neo4j函数
+![知识图谱示例](1fe8f6f667efc6ab7fd6ab95affe6b5.png)
 
 6、按照config/.env.example，创建.env文件,其中apikey需要使用阿里云百炼的apikey
 
